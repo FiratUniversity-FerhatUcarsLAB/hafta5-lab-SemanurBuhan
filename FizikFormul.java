@@ -1,11 +1,8 @@
 /*
- * Ad Soyad: [ADINIZI BURAYA YAZIN]
- * Ogrenci No: [OGRENCI NUMARANIZI BURAYA YAZIN]
- * Tarih: [TARIHI BURAYA YAZIN]
+ * Ad Soyad: SEMANUR BUHAN
+ * Ogrenci No: 250541007
+ * Tarih: 9.11.2025
  * Aciklama: Gorev 2 - Fizik Formulu Asistani
- *
- * Bu program temel fizik formullerini kullanarak
- * hesaplamalar yapar.
  */
 
 import java.util.Scanner;
@@ -13,64 +10,56 @@ import java.util.Scanner;
 public class FizikFormul {
 
     // Sabit: Yercekimi ivmesi
-    final static double GRAVITY = 9.8; // m/s²
+    final static double GRAVITY = 9.8; 
 
-    // METOT 1: Hız hesapla (v = s / t)
+    //  Hız hesapla 
     public static double calculateVelocity(double distance, double time) {
-        // v = mesafe / zaman
-        return 0.0; // Degistirin
+        return distance / time; 
     }
 
-    // METOT 2: İvme hesapla (a = Δv / t)
+    //  İvme hesapla 
     public static double calculateAcceleration(double velocityChange, double time) {
-        // a = hiz degisimi / zaman
-        return 0.0; // Degistirin
+         return velocityChange / time; 
     }
 
-    // METOT 3: Kuvvet hesapla (F = m * a)
+    // Kuvvet hesapla 
     public static double calculateForce(double mass, double acceleration) {
         // F = kutle * ivme
-        return 0.0; // Degistirin
+        return mass * acceleration; 
     }
 
-    // METOT 4: İş hesapla (W = F * d)
+    // İş hesapla 
     public static double calculateWork(double force, double distance) {
-        // W = kuvvet * mesafe
-        return 0.0; // Degistirin
+        return force * distance; 
     }
 
-    // METOT 5: Güç hesapla (P = W / t)
+    //  Güç hesapla 
     public static double calculatePower(double work, double time) {
-        // P = is / zaman
-        return 0.0; // Degistirin
+        return work / time; 
     }
 
-    // METOT 6: Kinetik enerji (KE = 0.5 * m * v²)
+    //Kinetik enerji (KE = 0.5 * m * v²)
     public static double calculateKineticEnergy(double mass, double velocity) {
-        // KE = 0.5 * kutle * (hiz * hiz)
-        // Math.pow(velocity, 2) kullanabilirsiniz
-        return 0.0; // Degistirin
+        return 0.5 * mass * Math.pow(velocity,2); 
     }
 
-    // METOT 7: Potansiyel enerji (PE = m * g * h)
+    //  Potansiyel enerji 
     public static double calculatePotentialEnergy(double mass, double gravity, double height) {
-        // PE = kutle * yercekimi * yukseklik
-        return 0.0; // Degistirin
+        return mass * gravity * height; 
     }
 
-    // METOT 8: Momentum (p = m * v)
+    //  Momentum 
     public static double calculateMomentum(double mass, double velocity) {
-        // p = kutle * hiz
-        return 0.0; // Degistirin
+        return mass * velocity; 
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("=== FIZIK FORMUL ASISTANI ===");
+        System.out.println("=== FIZIK FORMÜL ASİSTANI ===");
         System.out.println();
 
-        // TEMEL OLCUMLER
+        // Temel olcumler 
         System.out.println("TEMEL OLCUMLER:");
         System.out.print("Kutle (kg): ");
         double mass = input.nextDouble();
@@ -87,12 +76,17 @@ public class FizikFormul {
         System.out.print("Yukseklik (m): ");
         double height = input.nextDouble();
 
-        // HESAPLAMALARI YAP - Metotlari cagir
-        // 1. Hiz (v) hesaplanmali (KE ve Momentum icin gerekli)
-        // 2. Ivme (a) hesaplanmali (Kuvvet icin gerekli)
-        // 3. Kuvvet (F) hesaplanmali (Is icin gerekli)
-        // 4. Is (W) hesaplanmali (Guc icin gerekli)
-        // ... digerlerini hesaplayin
+        // Hesaplamalar yapıldı metodlar çaığrıldı
+        double velocity = calculateVelocity(distance, time);
+        double acceleration = calculateAcceleration(deltaV, time);
+        double force = calculateForce(mass, acceleration);
+        double work = calculateWork(force, distance);
+        double power = calculatePower(work, time);
+        double kineticEnergy = calculateKineticEnergy(mass, velocity);
+        double potentialEnergy = calculatePotentialEnergy(mass, GRAVITY, height);
+        double momentum = calculateMomentum(mass, velocity);
+
+        
   
 
 
